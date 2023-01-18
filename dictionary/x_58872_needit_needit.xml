@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7a8628509720211019613d400153af4a" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element default="40" label="New field 1" max_length="40" name="new_field_1" reference="x_58872_needit__empty_" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="New Date/Time" mandatory="true" max_length="40" name="u_glide_date_time_5" type="glide_date_time"/>
+        <element label="New field" max_length="40" name="u_integer_1" type="integer"/>
+        <element attributes="encode_utf8=false" label="Requestor for" mandatory="true" max_length="32" name="u_requestor_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resources" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="Facilities" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="Your Department Choice" sequence="3" value="your choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>
